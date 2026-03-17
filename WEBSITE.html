@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SG - Shadow Genesis</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.9);
+            position: sticky;
+            top: 0;
+        }
+
+        header img {
+            width: 60px;
+            filter: drop-shadow(0 0 10px red);
+        }
+
+        nav a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+            text-shadow: 0 0 10px red;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(black, #0a0a0a);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            color: red;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px red; }
+            to { text-shadow: 0 0 40px red; }
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: darkred;
+        }
+
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+
+        /* PLAYERS */
+        .players {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #111;
+            margin: 15px;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px red;
+        }
+
+        /* GALLERY */
+        .gallery img {
+            width: 260px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <img src="C:\Users\Owner\Downloads\ChatGPT Image Mar 17, 2026, 06_52_41 PM.png">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#players">Players</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>SG</h1>
+    <p>SHADOW GENESIS • FREE FIRE ESPORTS</p>
+    <a href="#players" class="btn">VIEW TEAM</a>
+    <a href="#join" class="btn">JOIN OUR TEAM</a>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>🔥 About Us</h2>
+    <p>Shadow Genesis is a professional Free Fire esports team focused on domination, strategy, and victory.</p>
+</section>
+
+<!-- PLAYERS -->
+<section id="players">
+    <h2>🎮 Our Squad</h2>
+
+    <div class="players">
+        <div class="card">
+            <img src="https://picsum.photos/200?1">
+            <h3>SG Alpha</h3>
+            <p>Rusher</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?2">
+            <h3>SG Demon</h3>
+            <p>Sniper</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?3">
+            <h3>SG Shadow</h3>
+            <p>Support</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?4">
+            <h3>SG King</h3>
+            <p>IGL</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>📸 Highlights</h2>
+    <div class="gallery">
+        <img src="C:\Users\Owner\Downloads\WhatsApp Image 2026-03-17 at 7.09.34 PM.jpeg">
+        <img src="C:\Users\Owner\Downloads\WhatsApp Image 2026-03-17 at 7.09.41 PM.jpeg">
+        <img src="C:\Users\Owner\Downloads\WhatsApp Image 2026-03-17 at 7.11.27 PM.jpeg">
+    </div>
+</section>
+
+<section id="join">
+    <h2>🚀 Join SG - Shadow Genesis</h2>
+    <p>Think you have what it takes? Fill out the form below to apply!</p>
+
+    <form action="https://formspree.io/f/meerpgdz" method="POST" style="max-width:400px; margin:auto;">
+        <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px;">
+        <input type="email" name="_replyto" placeholder="Email" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px;">
+        <input type="text" name="uid" placeholder="Free Fire UID" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px;">
+        <input type="text" name="role" placeholder="Role (Rusher/Sniper/Support/IGL)" required style="width:100%; padding:10px; margin:10px 0; border-radius:5px;">
+        <textarea name="message" placeholder="Any Message" style="width:100%; padding:10px; margin:10px 0; border-radius:5px;"></textarea>
+        <button type="submit" class="btn" style="width:100%;">Submit Application</button>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: sgteam@email.com</p>
+    <p>Instagram: @sg_esports</p>
+</section>
+
+<footer>
+    <p>© 2026 SG - Shadow Genesis</p>
+</footer>
+
+</body>
+</html>
